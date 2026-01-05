@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rudra sah — Portfolio</title>
+  <meta name="description" content="Portfolio of Rudra sah – Electrical and Electronics Engineer & Technician" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa6b2;
+      --accent:#7c5cff;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      --radius:12px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui;background:linear-gradient(180deg,var(--bg),#071023);color:#e6eef6}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#5ee7df);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071023}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:28px}
+    .card{background:linear-gradient(180deg,var(--card),rgba(255,255,255,0.02));border-radius:var(--radius);padding:22px}
+    .intro h2{margin:0 0 8px 0;font-size:28px}
+    .intro p{color:var(--muted);line-height:1.5}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer;color:#071023}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .cta{display:flex;gap:10px;margin-top:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px}
+    .contact-form label{display:block;font-size:13px;margin-top:10px;color:var(--muted)}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:inherit}
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="brand">
+      <div class="avatar">RS</div>
+      <div>
+        <h1>Rudra sah</h1>
+        <div style="color:var(--muted);font-size:13px">Electrical and Electronics Engineer & Technician • PCB Repair • IT & Networking</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="card intro">
+      <h2>Hello, I’m Rudra sah</h2>
+      <p>I am an Electrical and Electronics Engineer & Technician with strong hands‑on experience in PCB troubleshooting, component‑level repair, power electronics, and IT/networking systems. I enjoy diagnosing faults, restoring failed boards, and building reliable electronic solutions.</p>
+      <div class="cta">
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+        <a class="btn ghost" href="mailto:rudrasah49@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <aside class="card">
+      <h3 id="skills">Skills</h3>
+      <div class="skills" style="margin-top:10px">
+        <div class="skill">Soldering (SMD & Through‑Hole)</div>
+        <div class="skill">PCB Troubleshooting & Repair</div>
+        <div class="skill">Component‑Level Diagnosis</div>
+        <div class="skill">Schematic Reading & Circuit Analysis</div>
+        <div class="skill">Power Electronics & SMPS Repair</div>
+        <div class="skill">Rectifiers, Inverters & Power Supplies</div>
+        <div class="skill">Transformers, Motors & Control Circuits</div>
+        <div class="skill">Test Equipment (DMM, Oscilloscope)</div>
+        <div class="skill">Embedded Systems Basics</div>
+        <div class="skill">Electrical Safety & Grounding</div>
+        <div class="skill">IT Networking (TCP/IP, LAN/WAN)</div>
+        <div class="skill">Linux System Administration</div>
+        <div class="skill">Network Troubleshooting & Cabling</div>
+        <div class="skill">Firewall, VPN & Basic Cybersecurity</div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="card" id="contact" style="margin-top:20px">
+    <h3>Contact</h3>
+    <p style="color:var(--muted)">Email: <strong>rudrasah49@gmail.com</strong></p>
+    <form class="contact-form" onsubmit="event.preventDefault();alert('Demo form – connect email backend later');">
+      <label>Name</label>
+      <input type="text" placeholder="Your name" required>
+      <label>Email</label>
+      <input type="email" placeholder="rudrasah49@gmail.com" required>
+      <label>Message</label>
+      <textarea placeholder="Your message" required></textarea>
+      <button class="btn" style="margin-top:12px">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    © Rudra sah • Electrical & Electronics Engineer & Technician
+  </footer>
+</div>
+</body>
+</html>
